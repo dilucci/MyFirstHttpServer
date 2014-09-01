@@ -15,7 +15,7 @@ import java.net.InetSocketAddress;
 
 /**
  *
- * @author Michael
+ * @author Seb
  */
 public class First_HTTP_server {
 
@@ -46,8 +46,6 @@ public class First_HTTP_server {
         @Override
         public void handle(HttpExchange he) throws IOException {
             
-//            String response = "Welcome to my first http-server";
-            
             StringBuilder sb = new StringBuilder();
             sb.append("<!DOCTYPE html>\n");
             sb.append("<html>\n");
@@ -56,7 +54,7 @@ public class First_HTTP_server {
             sb.append("<meta charset='UTF-8'>\n");
             sb.append("</head>\n");
             sb.append("<body>\n");
-            sb.append("<h2>Welcome to my very first home made Web Server :-)</h2>\n");
+            sb.append("<h1>Welcome to my very first home made Web Server :-)</h1>\n");
             sb.append("</body>\n");
             sb.append("</html>\n");
             String response = sb.toString();
