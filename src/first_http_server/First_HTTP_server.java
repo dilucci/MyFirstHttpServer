@@ -12,7 +12,6 @@ import com.sun.net.httpserver.HttpServer;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.InetSocketAddress;
-import java.util.HashMap;
 
 /**
  *
@@ -76,8 +75,6 @@ public class First_HTTP_server {
 
         @Override
         public void handle(HttpExchange he) throws IOException {
-            
-//            String response = "Welcome to my first http-server";
             
             StringBuilder sb = new StringBuilder();
             sb.append("<!DOCTYPE html>\n");
